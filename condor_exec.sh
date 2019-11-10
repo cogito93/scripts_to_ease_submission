@@ -1,4 +1,4 @@
-#!/bin/sh
+#! /bin/sh
 
 export HOMEG4=`pwd`
 export PATH=$PATH:/cvmfs/sft.cern.ch/lcg/contrib/CMake/3.11.1/Linux-x86_64/bin
