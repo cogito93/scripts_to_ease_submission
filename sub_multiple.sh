@@ -14,7 +14,7 @@ m=$(($1-1))
 
 while [ $i -le 91 ]
 do
-n=`condor_q | awk 'NR==5 {print $8}'`
+n=`condor_q | grep 'condor_ex' | awk '{print $8}'`
 if [ $n -lt $((500*$m+10)) ]
 then
 ./sub_single.sh $i
