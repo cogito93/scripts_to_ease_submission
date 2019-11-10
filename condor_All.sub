@@ -1,0 +1,14 @@
+universe = vanilla
+executable = condor_WGR16.sh
+initialdir = 36
+arguments = $(ProcId)
+output = log/$(ProcId).out
+error = log/$(ProcId).err
+log = log/$(ProcId).log
+request_memory = 3 GB
+
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
+transfer_input_files = /home/ms_kim/CEPC/fullsim/build/CMakeFiles, /home/ms_kim/CEPC/fullsim/build/CMakeCache.txt, /home/ms_kim/CEPC/fullsim/build/condor_WGR16.sh, /home/ms_kim/CEPC/fullsim/build/init.mac, /home/ms_kim/CEPC/fullsim/build/run_ele.mac, /home/ms_kim/CEPC/fullsim/build/run_pi.mac, /home/ms_kim/CEPC/fullsim/build/WGR16
+
+queue 500
