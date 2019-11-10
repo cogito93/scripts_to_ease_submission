@@ -1,6 +1,6 @@
 universe = vanilla
 executable = condor_exec.sh
-initialdir = 1
+initialdir = #tower
 arguments = $(ProcId)
 output = log/$(ProcId).out
 error = log/$(ProcId).err
