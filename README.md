@@ -1,5 +1,5 @@
 # scripts_to_ease_submission
-manage jobs a little bit easily
+manage jobs little bit easily
 
 HOW TO USE
 
