@@ -1,0 +1,14 @@
+universe = vanilla
+executable = condor_exec.sh
+initialdir = #tower
+arguments = $(ProcId)
+output = log/$(ProcId).out
+error = log/$(ProcId).err
+log = log/$(ProcId).log
+request_memory = 3 GB
+
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
+transfer_input_files = /path/to/CEPC/fullsim/build/CMakeFiles, /path/to/CEPC/fullsim/build/CMakeCache.txt, /path/to/CEPC/fullsim/build/condor_exec.sh, /path/to/CEPC/fullsim/build/init.mac, /path/to/CEPC/fullsim/build/run_ele.mac, /path/to/CEPC/fullsim/build/run_pi.mac, /path/to/CEPC/fullsim/build/WGR16
+
+queue 500
